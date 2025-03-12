@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
+            background-color: #f4f4f4;
         }
         h1 {
             color: #333;
@@ -16,10 +17,29 @@
         p {
             color: #666;
         }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <h1>Вітаємо, раді бачити у нас на сайті</h1>
     <p>Це проста HTML-сторінка для демонстрації.</p>
+    <button onclick="showMessage()">Натисни мене</button>
+    <script>
+        function showMessage() {
+            alert("Дякуємо, що відвідали наш сайт!");
+        }
+    </script>
 </body>
 </html>
